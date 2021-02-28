@@ -9,6 +9,10 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
        * [Allow Xenon through Windows Firewall](#allow-xenon-through-windows-firewall)
      * [If all else fails...](#if-all-else-fails)
      * [Wait, how do I access my files?](#wait-how-do-i-access-my-files)
+   * [Launching Xenon on startup](#launching-xenon-on-startup)
+     * [Windows](#windows)
+     * [macOS](#macos)
+     * [Linux](#linux)
    * [Mounts](#mounts)
      * [Folder Path](#folder-path)
      * [Preset](#preset)
@@ -105,6 +109,35 @@ Once this has been set up, it will appear in your file explorer as "DavWWWHost" 
 Don't forget to actually add mounts in the Xenon preferences, else it'll just be a blank folder!
 
 ![Xenon in Finder](res/xenon-finder.png)
+
+## Launching Xenon on startup
+
+It's possible to automatically launch the Xenon server when logging on!
+
+### Windows
+
+1. Press the Windows key and R at the same time.
+2. The Run menu should pop up, type in `shell:startup` and press enter
+
+
+![shell:startup](res/shell-startup.png)
+
+3. Drag and drop your `xenon-client.exe` into the resulting folder!
+
+![windows startup](res/windows-startup.png)
+
+## macOS
+
+1. Launch System Preferences
+2. Select "Users & Groups"
+3. Go to "Login Items" under your user
+4. Drop the Xenon app into the list
+
+![macOS startup](res/macos-startup.gif)
+
+## Linux
+
+The packages for Xenon should come with a systemd user service, so just `sudo systemctl enable --now --user xenon-client`.
 
 # Mounts
 
