@@ -38,7 +38,7 @@ This will bring up your camera, which you should use to scan the QR Code. If suc
 
 ![Pairing Notification](res/pairing-notification.png)
 
-However, this may not always succeed automatically, due to the variety of network and computer setups people have, but this is fine, this is not the only way to pair. 
+However, this may not always succeed automatically, due to the variety of network and computer setups people have, but this is fine, this is not the only way to pair. If so, try the advice given in the [Troubleshooting](#troubleshooting) section.
 
 # Wait, how do I access my files?
 
