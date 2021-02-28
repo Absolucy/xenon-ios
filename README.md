@@ -19,7 +19,7 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
      * [Pairing - Allow Xenon through Windows Firewall](#pairing---allow-xenon-through-windows-firewall)
      * [Pairing - If all else fails...](#pairing---if-all-else-fails)
      * [General - Viewing the logs](#general---viewing-the-logs)
-     * [General - Enabling debug logs in the Xenon client](#general----enabling-debug-logs-in-the-xenon-client)
+     * [General - Enabling debug logs in the Xenon client](#general---enabling-debug-logs-in-the-xenon-client)
 <!--te-->
 
 # Pairing
