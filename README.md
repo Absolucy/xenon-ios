@@ -7,8 +7,8 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
      * [Troubleshooting issues with pairing](#troubleshooting-issues-with-pairing)
        * [Ensure your device and computer are on the same network](#ensure-your-device-and-computer-are-on-the-same-network)
        * [Allow Xenon through Windows Firewall](#allow-xenon-through-windows-firewall)
-     * [If all else fails...](#if-all-else-fails)
-     * [Wait, how do I access my files?](#wait-how-do-i-access-my-files)
+       * [If all else fails...](#if-all-else-fails)
+   * [How do I access my files?](#wait-how-do-i-access-my-files)
    * [Launching Xenon on startup](#launching-xenon-on-startup)
      * [Windows](#windows)
      * [macOS](#macos)
@@ -73,7 +73,7 @@ To ensure that Xenon is allowed network access, follow these steps:
 
 This should allow Xenon to pair!
 
-## If all else fails...
+### If all else fails...
 
 If nothing can get your device to automatically pair with your computer, do not fret! There is still a way to manually pair your device.
 
@@ -92,7 +92,11 @@ If nothing can get your device to automatically pair with your computer, do not 
  6. Save your changes  to `config.toml`.
  7. Quit and re-open the Xenon client. It should now be succesfully paired!
 
-## Wait, how do I access my files?
+Once this has been set up, it will appear in your file explorer as "DavWWWHost" (Windows) or "localhost" (macOS)
+
+Don't forget to actually add mounts in the Xenon preferences, else it'll just be a blank folder!
+
+# Wait, how do I access my files?
 
 Normally, Xenon should add itself to your native file explorer on Windows/Linux after connecting and sending a notification.
 
@@ -104,12 +108,7 @@ However, if you do not get this prompt automatically, you will need to manually 
  * [macOS](https://support.apple.com/guide/mac-help/connect-disconnect-a-webdav-server-mac-mchlp1546/mac) ([archive](https://web.archive.org/web/20210228173041/https://support.apple.com/guide/mac-help/connect-disconnect-a-webdav-server-mac-mchlp1546/mac))
  * [Linux / Ubuntu](https://help.dreamhost.com/hc/en-us/articles/216473527-Accessing-WebDAV-with-Mac-OS-X-and-Linux) ([archive](https://web.archive.org/web/20210228173600/https://help.dreamhost.com/hc/en-us/articles/216473527-Accessing-WebDAV-with-Mac-OS-X-and-Linux))
 
-Once this has been set up, it will appear in your file explorer as "DavWWWHost" (Windows) or "localhost" (macOS)
-
-Don't forget to actually add mounts in the Xenon preferences, else it'll just be a blank folder!
-
 ![Xenon in Finder](res/xenon-finder.png)
-
 ## Launching Xenon on startup
 
 It's possible to automatically launch the Xenon server when logging on!
