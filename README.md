@@ -39,10 +39,10 @@ However, this may not always succeed automatically, due to the variety of networ
 Your device and the computer you wish to pair must be on the same network - connected to the same modem/router. It does not matter *how* they're connected - Ethernet/Wifi/Powerline adapter, doesn't matter - but they cannot be connected to separate networks, such as mobile data. 
 
 Tutorials for checking local IP / network on...
- * [iOS](https://confluence.uconn.edu/ikb/communication-and-collaboration/phone/cellular-services/finding-the-ip-address-for-an-ios-device)
- * [Windows 10](https://support.microsoft.com/en-us/windows/find-your-ip-address-f21a9bbc-c582-55cd-35e0-73431160a1b9)
- * [macOS](https://ccm.net/faq/42628-mac-os-x-how-to-find-your-public-or-local-ip-address)
- * [Linux](https://phoenixnap.com/kb/how-to-find-ip-address-linux)
+ * [iOS](https://confluence.uconn.edu/ikb/communication-and-collaboration/phone/cellular-services/finding-the-ip-address-for-an-ios-device) ([archive](https://web.archive.org/web/20210228171900/https://confluence.uconn.edu/ikb/communication-and-collaboration/phone/cellular-services/finding-the-ip-address-for-an-ios-device))
+ * [Windows 10](https://support.microsoft.com/en-us/windows/find-your-ip-address-f21a9bbc-c582-55cd-35e0-73431160a1b9) ([archive](https://web.archive.org/web/20210228172013/https://support.microsoft.com/en-us/windows/find-your-ip-address-f21a9bbc-c582-55cd-35e0-73431160a1b9))
+ * [macOS](https://ccm.net/faq/42628-mac-os-x-how-to-find-your-public-or-local-ip-address) ([archive](https://web.archive.org/web/20210228172057/https://ccm.net/faq/42628-mac-os-x-how-to-find-your-public-or-local-ip-address))
+ * [Linux](https://phoenixnap.com/kb/how-to-find-ip-address-linux) ([archive](https://web.archive.org/web/20210228172132/https://phoenixnap.com/kb/how-to-find-ip-address-linux))
 
 ### Allow Xenon through Windows Firewall
 
