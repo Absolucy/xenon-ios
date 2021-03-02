@@ -3,6 +3,7 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
 # Table of contents
 
 <!--ts-->
+   * [Client Downloads](#client-downloads)
    * [Pairing](#pairing)
    * [How do I access my files?](#wait-how-do-i-access-my-files)
    * [Launching Xenon on startup](#launching-xenon-on-startup)
@@ -21,6 +22,12 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
      * [General - Viewing the logs](#general---viewing-the-logs)
      * [General - Enabling debug logs in the Xenon client](#general---enabling-debug-logs-in-the-xenon-client)
 <!--te-->
+
+# Client Downloads
+
+The first thing you need is, of course, the Xenon client for your computer!
+
+[These are located in this repo's releases, which can be accessed by clicking here.](https://github.com/aspenluxxxy/xenon-docs/releases/tag/latest)
 
 # Pairing
 
