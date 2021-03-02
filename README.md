@@ -6,7 +6,9 @@ In tweak version 1.0.0, there is a major bug that occurs on new installs, result
 
 There are two ways to fix this:
  - Create the `/var/mobile/Library/me.aspenuwu.xenon` folder in Filza
+
 OR
+
  - Run the following commands over SSH:
 ```bash
 mkdir /var/mobile/Library/me.aspenuwu.xenon
