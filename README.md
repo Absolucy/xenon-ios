@@ -27,7 +27,7 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
 
 The first thing you need is, of course, the Xenon client for your computer!
 
-[These are located in this repo's releases, which can be accessed by clicking here.](https://github.com/aspenluxxxy/xenon-docs/releases/tag/latest)
+[These are located in this repo's releases, which can be accessed by clicking here.](https://github.com/aspenluxxxy/xenon-docs/releases/latest)
 
 # Pairing
 
