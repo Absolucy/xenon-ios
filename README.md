@@ -1,5 +1,19 @@
 Hello there! You're probably here because you're using my Xenon file-sharing tweak for iOS, and you're wondering how it works! I've come across many of the edge cases and weird issues people have had during testing, so I've put together this to help you ensure that everything works.
 
+# FIX FOR "Xenon Daemon Not Running"
+
+In tweak version 1.0.0, there is a major bug that occurs on new installs, resulting in "Xenon Daemon not running".
+
+There are two ways to fix this:
+ - Create the `/var/mobile/Library/me.aspenuwu.xenon` folder in Filza
+OR
+ - Run the following commands over SSH:
+```bash
+mkdir /var/mobile/Library/me.aspenuwu.xenon
+chown mobile /var/mobile/Library/me.aspenuwu.xenon
+```
+The `chown` is not needed if you are SSH'd in as the `mobile` user, but it IS needed if you are `root`.
+
 # Table of contents
 
 <!--ts-->
