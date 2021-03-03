@@ -17,7 +17,7 @@ Hello there! You're probably here because you're using my Xenon file-sharing twe
      * [App Bundle](#app-bundle)
    * [Troubleshooting](#debugging)
      * [Pairing - Ensure your device and computer are on the same network](#pairing---ensure-your-device-and-computer-are-on-the-same-network)
-     * [Pairing - Allow Xenon through Windows Firewall](#pairing---allow-xenon-through-windows-firewall)
+     * [Pairing - Disable Windows Firewall](#pairing---disable-windows-firewall)
      * [Pairing - If all else fails...](#pairing---if-all-else-fails)
      * [General - Viewing the logs](#general---viewing-the-logs)
      * [General - Enabling debug logs in the Xenon client](#general---enabling-debug-logs-in-the-xenon-client)
@@ -128,25 +128,13 @@ Tutorials for checking local IP / network on...
  * [macOS](https://ccm.net/faq/42628-mac-os-x-how-to-find-your-public-or-local-ip-address) ([archive](https://web.archive.org/web/20210228172057/https://ccm.net/faq/42628-mac-os-x-how-to-find-your-public-or-local-ip-address))
  * [Linux](https://phoenixnap.com/kb/how-to-find-ip-address-linux) ([archive](https://web.archive.org/web/20210228172132/https://phoenixnap.com/kb/how-to-find-ip-address-linux))
 
-## Pairing - Allow Xenon through Windows Firewall
+## Pairing - Disable Windows Firewall
 
 If you're using Windows, the Windows Firewall is known to cause issues with the pairing process.
 
-To ensure that Xenon is allowed network access, follow these steps:
+If this is the case, try **disabling windows firewall _until the pairing process is complete_**. You should re-enable it as soon as you get the "connected" notification.
 
- 1. Open up the Start Menu
- 2. Search "Windows Firewall"
- 3. Select "Windows Defender Firewall"  
- ![Windows Defender Firewall](res/defender-firewall.png)
- 4. Click "Allow an app or feature through Windows Defender Firewall"  
- ![Allow through firewall](res/firewall-allow.png)
- 5. Click "Change Settings"  
- ![Change Settings](res/change-settings.png)
- 6. Scroll down until you find "The client for Xenon...", and ensure that both "Private" and "Public" are checked for it.  
- ![Firewall Selected](res/firewall-selected.png)
- 7. Select "Ok" to save your new firewall configuration.
-
-This should allow Xenon to pair!
+[Click here for a tutorial on disabling the Windows Firewall.](https://www.lifewire.com/how-to-disable-the-windows-firewall-2624505) ([archive](https://web.archive.org/web/20210303215656/https://www.lifewire.com/how-to-disable-the-windows-firewall-2624505))
 
 ## Pairing - If all else fails...
 
