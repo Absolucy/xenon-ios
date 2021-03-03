@@ -155,11 +155,7 @@ If nothing can get your device to automatically pair with your computer, do not 
  1. Go to the Xenon preferences on your device.
  2. Select "Copy Client Configuration" - this will copy to your clipboard.
  3. Now, send the contents of your clipboard to your PC somehow - emailing it to yourself, sending it somewhere private on Discord (like a bot's DM), or perhaps using [Boardy](https://chariz.com/buy/boardy).
- 4. Select "Open Config" from the client's system tray menu, or if that does not work, "Open Config Folder" from the system tray menu.
-
-![Opening the config](res/open-config.png)
-
-"Open Config" works if your computer can open .toml files, otherwise you will need to go to the folder and open `config.toml` in a text editor.
+ 4. Select "Open Config Folder" from the client's system tray menu, and open the `config.toml` in the opened folder using a text editor.
 
 ![config.toml](res/config-toml.png)
 
