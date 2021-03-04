@@ -1,0 +1,39 @@
+[package]
+name = "xenon-server"
+version = "1.0.2"
+authors = ["aspen <aspenuwu@protonmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+anyhow = "1.0.38"
+async-anyhow-logger = "0.1.0"
+base64 = "0.13.0"
+core-foundation = "0.9.1"
+futures = "0.3.13"
+hex = "0.4.3"
+hostname = "0.3.1"
+http = "0.2.3"
+hyper = { version = "0.14.4", features = ["server", "http1", "http2", "runtime", "stream", "tcp"] }
+libloading = "0.7.0"
+log = "0.4.14"
+once_cell = "1.7.2"
+oslog = "0.1.0"
+plist = "1.1.0"
+pretty_env_logger = "0.4.0"
+rmp-serde = "0.15.4"
+serde_json = "1.0.64"
+sha-1 = "0.9.4"
+snow = "0.7.2"
+tokio = { version = "1.2.0", features = ["full"] }
+toml = "0.5.8"
+uname = "0.1.1"
+webdav-handler = "0.2.0-alpha.6"
+reqwest = { version = "0.11.1", default-features = false, features = ["rustls-tls", "json"] }
+xenon-config = { path = "../xenon-config" }
+xenon-tunnel = { path = "../xenon-tunnel" }
+
+[features]
+default = ["ring"]
+beta = ["xenon-tunnel/beta"]
+ring = ["snow/ring-accelerated", "xenon-config/ring", "xenon-tunnel/ring"]

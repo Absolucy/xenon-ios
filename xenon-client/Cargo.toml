@@ -1,0 +1,61 @@
+[package]
+name = "xenon-client"
+description = "The client for Xenon, an easy-to-use file server, making it very easy to view and manage your iOS filesystem from a computer, including local files and photos!"
+version = "1.0.2"
+authors = ["aspen <aspenuwu@protonmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+anyhow = "1.0.38"
+async-anyhow-logger = "0.1.0"
+base64 = "0.13.0"
+cli-clipboard = "0.2.0"
+directories-next = "2.0.0"
+futures-util = "0.3.13"
+http = "0.2.3"
+hyper = { version = "0.14.4", features = ["server", "client", "http1", "http2", "runtime"] }
+image = "0.23.14"
+keyring = "0.10.1"
+log = "0.4.14"
+log-panics = "2.0.0"
+notifica = "3.0.2"
+once_cell = "1.7.2"
+opener = "0.4.1"
+pretty_env_logger = "0.4.0"
+qrcode = "0.12.0"
+reqwest = { version = "0.11.1", default-features = false, features = ["native-tls", "json"] }
+rmp-serde = "0.15.4"
+serde_json = "1.0.64"
+simplelog = "0.9.0"
+snow = "0.7.2"
+tempfile = "3.2.0"
+tokio = { version = "1.2.0", features = ["full"] }
+toml = "0.5.8"
+tray-item = { git = "https://github.com/aspenluxxxy/tray-item-rs", branch = "macos-icons" }
+xenon-config = { path = "../xenon-config" }
+xenon-log-upload = { path = "../xenon-log-upload" }
+xenon-tunnel = { path = "../xenon-tunnel" }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+gtk = "=0.8.1"
+
+[features]
+default = ["ring"]
+beta = ["log-panics/with-backtrace", "xenon-tunnel/beta"]
+ring = ["snow/ring-accelerated", "xenon-config/ring", "xenon-tunnel/ring"]
+
+[package.metadata.bundle]
+name = "Xenon"
+identifier = "me.aspenuwu.xenon.client"
+copyright = "Copyright (c) 2021, aspen <aspenuwu@protonmail.com>. All rights reserved."
+category = "public.app-category.utilities"
+short_description = "The client for Xenon, an easy-to-use file server, making it very easy to view and manage your iOS filesystem from a computer, including local files and photos!"
+
+[package.metadata.winres]
+FileDescription = "The client for Xenon, an easy-to-use file server, making it very easy to view and manage your iOS filesystem from a computer, including local files and photos!"
+LegalCopyright = "Copyright (c) 2021, aspen <aspenuwu@protonmail.com>. All rights reserved."
+OriginalFilename = "xenon-client.exe"
+
+[package.metadata.deb.systemd-units]
+unit-name = "xenon-client"

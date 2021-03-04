@@ -1,0 +1,22 @@
+BasedOnStyle: Microsoft
+AlignAfterOpenBracket: Align
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterCaseLabel: false
+    AfterControlStatement: MultiLine
+    AfterEnum: false
+    AfterFunction: false
+    AfterStruct: false
+    AfterUnion: false
+    AfterExternBlock: false
+    BeforeElse: false
+DerivePointerAlignment: false
+IndentCaseBlocks: true
+IndentCaseLabels: true
+IndentGotoLabels: true
+PointerAlignment: Left
+UseCRLF: false
+UseTab: Always
+SpaceBeforeParens: ControlStatementsExceptForEachMacros
+AccessModifierOffset: -4
+ContinuationIndentWidth: 4

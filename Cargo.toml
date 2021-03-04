@@ -1,0 +1,16 @@
+[workspace]
+members = [
+	"xenon-client",
+	"xenon-config",
+	"xenon-log-upload",
+	"xenon-server",
+	"xenon-tunnel",
+]
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+codegen-units = 1
+incremental = true
+opt-level = 's'

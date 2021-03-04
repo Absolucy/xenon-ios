@@ -1,0 +1,18 @@
+[package]
+name = "xenon-config"
+version = "1.0.0"
+authors = ["aspen <aspenuwu@protonmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+anyhow = "1.0.38"
+base64 = "0.13.0"
+base64-serde = "0.6.1"
+rand = "0.8.3"
+rmp-serde = "0.15.4"
+serde = { version = "1.0.123", features = ["derive"] }
+snow = "0.7.2"
+
+[features]
+ring = ["snow/ring-accelerated"]

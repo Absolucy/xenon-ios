@@ -1,0 +1,13 @@
+*       text=auto eol=lf
+
+# Guaranteed to be text
+*.h     text      eol=lf
+*.json  text      eol=lf
+*.m     text      eol=lf
+*.md    text      eol=lf
+*.rs    text      eol=lf
+*.swift text      eol=lf
+*.toml  text      eol=lf
+*.txt   text      eol=lf
+
+xenon-prefs/Sources/BlueSocket/* linguist-vendored

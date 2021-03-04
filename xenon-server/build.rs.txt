@@ -1,0 +1,55 @@
+use std::{path::PathBuf, process::Command};
+
+fn main() {
+	/*
+	let out_dir = PathBuf::from(std::env::var("OUT_DIR").context("failed to get OUT_DIR!")?);
+	let manifest_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+	let theos_dir = PathBuf::from(std::env::var("THEOS").context("failed to get THEOS!")?);
+
+	println!("cargo:rustc-link-lib=framework=Foundation");
+	println!("cargo:rustc-link-lib=framework=CoreServices");
+	   println!("cargo:rerun-if-changed=src/FindBundle.h");
+	   println!("cargo:rerun-if-changed=src/FindBundle.swift");
+
+	   if !Command::new(theos_dir.join("toolchain/Xcode.xctoolchain/usr/bin/swiftc"))
+		   .arg("-swift-version")
+		   .arg("5")
+		   .arg("-runtime-compatibility-version")
+		   .arg("5.0")
+		   .arg("-O")
+		   .arg("-target")
+		   .arg("arm64-apple-ios12.3")
+		   .arg("-sdk")
+		   .arg(theos_dir.join("sdks/iPhoneOS13.0.sdk"))
+		   .arg("-framework")
+		   .arg("CoreServices")
+		   .arg("-emit-library")
+		   .arg("-parse-as-library")
+		   .arg("-disable-autolinking-runtime-compatibility-dynamic-replacements")
+		   .arg("-disable-autolinking-runtime-compatibility")
+		   .arg("-static")
+		   .arg("-import-objc-header")
+		   .arg(manifest_dir.join("src/FindBundle.h"))
+		   .arg("-o")
+		   .arg(out_dir.join("libfindbundle.a"))
+		   .arg(manifest_dir.join("src/FindBundle.swift"))
+		   .spawn()
+		   .context("failed to run swiftc")?
+		   .wait()
+		   .context("failed to wait for swiftc")?
+		   .success()
+	   {
+		   eprintln!("Failed to build Swift crap!");
+		   std::process::exit(1);
+	   }
+
+	   println!(
+		   "cargo:rustc-link-search={}",
+		   theos_dir
+			   .join("sdks/iPhoneOS13.0.sdk/usr/lib/swift")
+			   .display()
+	   );
+	   println!("cargo:rustc-link-search={}", out_dir.display());
+	   println!("cargo:rustc-link-lib=static=findbundle");
+	*/
+}
