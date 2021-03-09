@@ -2,6 +2,7 @@ daysUntilStale: 14
 daysUntilClose: 3
 exemptLabels:
     - help wanted
+    - confirmed
 staleLabel: inactive
 markComment: >
     This issue has been automatically marked as stale because it has not had
