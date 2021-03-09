@@ -1,0 +1,9 @@
+daysUntilStale: 14
+daysUntilClose: 3
+exemptLabels:
+    - help wanted
+staleLabel: inactive
+markComment: >
+    This issue has been automatically marked as stale because it has not had
+    recent activity. The issue will, until proven otherwise, assumed to be
+    user error or not an issue at all.
