@@ -173,6 +173,7 @@ fn main() -> Result<()> {
 	let tray_icon = "/usr/share/xenon-client/xenon.png";
 
 	let mut tray = TrayItem::new("Xenon Client", tray_icon).unwrap();
+
 	tray.add_menu_item("Pair Device", move || {
 		RUNTIME.spawn(catch_context("failed to pair", qrgen::qr_connection()));
 	})
@@ -220,6 +221,9 @@ fn main() -> Result<()> {
 	#[cfg(target_os = "macos")]
 	{
 		let inner = tray.inner_mut();
+		inner
+			.set_icon_template(tray_icon)
+			.expect("failed to set icon");
 		inner.add_quit_item("Quit");
 		inner.display();
 		panic!("tray exited early");

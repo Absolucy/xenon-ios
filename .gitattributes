@@ -10,4 +10,5 @@
 *.toml  text      eol=lf
 *.txt   text      eol=lf
 
-xenon-prefs/Sources/BlueSocket/* linguist-vendored
+xenon-prefs/Sources/XenonPrefs/Socket/* linguist-vendored
+xenon-client/tray-item-rs/* linguist-vendored

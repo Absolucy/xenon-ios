@@ -1,0 +1,13 @@
+--allman false
+--elseposition same-line
+--guardelse auto
+--importgrouping alpha
+--indent tab
+--linebreaks lf
+--maxwidth 120
+--redundanttype inferred
+--self insert
+--stripunusedargs always
+--swiftversion 5.2
+--trimwhitespace always
+--voidtype void

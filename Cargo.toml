@@ -1,6 +1,7 @@
 [workspace]
 members = [
 	"xenon-client",
+	"xenon-client/tray-item-rs",
 	"xenon-config",
 	"xenon-log-upload",
 	"xenon-server",
