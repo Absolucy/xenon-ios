@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>footerText</key>
+			<string>The Xenon client is required to be installed on your PC for this tweak to work!
+If it is installed, make sure it is open, and you can begin pairing by right clicking it's in the system tray, and clicking "Begin Pair".
+If you cannot automatically pair, you can use Copy Client Configuration to manually generate relevant configuration, then you can send it to your PC yourself and paste it into your client's configuration!
+</string>
+			<key>label</key>
+			<string>🧰 Pairing</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>begin_pair</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>💻 Pair Computer</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>view_pubkey</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true />
+			<key>label</key>
+			<string>🔑 Copy Public Key</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>copy_config</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true />
+			<key>label</key>
+			<string>⚙️ Copy Client Configuration</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>regenerate_keys</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>⚠️ Regenerate Keys</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>footerText</key>
+			<string></string>
+			<key>label</key>
+			<string>💾 Mounts</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>add_mount</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>➕ Add Mount</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>footerText</key>
+			<string></string>
+			<key>label</key>
+			<string>📌 Resources</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>open_github_docs</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>📝 Documentation</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>open_github_issue</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>🐛 Report an issue</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>copy_log</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>📋 Copy latest log to clipboard</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>footerText</key>
+			<string></string>
+			<key>label</key>
+			<string>💖 Credits</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>open_twitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>icon</key>
+			<string>aspen.png</string>
+			<key>label</key>
+			<string>Made by Aspen</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>open_alpha_twitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>icon</key>
+			<string>alpha.png</string>
+			<key>label</key>
+			<string>Logo by Alpha</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>XenonPrefs.LicenseListController</string>
+			<key>label</key>
+			<string>📄 Licenses</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Xenon</string>
+</dict>
+</plist>

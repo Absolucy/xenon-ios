@@ -4,9 +4,10 @@
 */
 
 use anyhow::{Context, Result};
+use obfstr::obfstr;
 use serde::{Deserialize, Serialize};
 
-const API_KEY: &str = "get yer own api key!";
+const API_KEY: &str = include_str!("paste_ee.key");
 
 #[derive(Serialize)]
 struct PasteEeUpload {
@@ -27,19 +28,19 @@ struct PasteEeResponse {
 
 pub async fn upload_log_to_paste(name: String, contents: String) -> Result<String> {
 	let upload = PasteEeUpload {
-		description: "Automatically uploaded Xenon log file".to_string(),
+		description: obfstr!("Automatically uploaded Xenon log file").to_string(),
 		sections: vec![PasteEeSection { name, contents }],
 	};
 	reqwest::Client::new()
-		.post("https://api.paste.ee/v1/pastes")
-		.header("X-Auth-Token", API_KEY)
-		.header("Content-Type", "application/json")
+		.post(obfstr!("https://api.paste.ee/v1/pastes"))
+		.header(obfstr!("X-Auth-Token"), obfstr!(API_KEY))
+		.header(obfstr!("Content-Type"), obfstr!("application/json"))
 		.json(&upload)
 		.send()
 		.await
-		.context("failed to send http request to paste.ee api")?
+		.with_context(|| obfstr!("failed to send http request to paste.ee api").to_string())?
 		.json::<PasteEeResponse>()
 		.await
 		.map(|response| response.link)
-		.context("failed to parse paste.ee response")
+		.with_context(|| obfstr!("failed to parse paste.ee response").to_string())
 }

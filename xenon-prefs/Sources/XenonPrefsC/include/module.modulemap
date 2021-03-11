@@ -1,0 +1,4 @@
+module XenonPrefsC {
+    umbrella "."
+    export *
+}

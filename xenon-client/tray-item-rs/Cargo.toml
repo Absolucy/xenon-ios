@@ -1,0 +1,31 @@
+[package]
+name = "tray-item"
+version = "0.4.0-alpha"
+authors = ["Edwin Svensson <trayitemrs@olback.net>"]
+edition = "2018"
+description = "Super simple API to make tray icons/menus on Windows, Mac & Linux"
+homepage = "https://github.com/olback/tray-item-rs"
+repository = "https://github.com/olback/tray-item-rs"
+readme = "README.md"
+keywords = ["gui", "tray", "desktop", "tray-item"]
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target.'cfg(target_os="linux")'.dependencies]
+libappindicator = "0.5.2"
+gtk = "0.9.2"
+
+[target.'cfg(target_os="windows")'.dependencies]
+winapi = { version = "0.3.9", features = ["shellapi", "libloaderapi", "errhandlingapi", "impl-default"] }
+libc = "0.2.88"
+padlock = "0.2.0"
+# winrt = { git = "https://github.com/microsoft/winrt-rs" } # No crosss compilation available
+
+[target.'cfg(target_os="macos")'.dependencies]
+cocoa = "0.24.0"
+objc = "0.2.7"
+core-graphics = "0.22.2"
+objc-foundation = "0.1.1"
+objc_id = "0.1.1"
+libc = "0.2.88"
