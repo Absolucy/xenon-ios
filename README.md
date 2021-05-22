@@ -2,7 +2,7 @@
 
 This is the public source for the [Xenon](https://chariz.com/buy/xenon) iOS tweak.
 
-[The full version is available for $1.99 on Chariz](https://chariz.com/buy/xenon).
+[The full version is available for $0.99 on Chariz](https://chariz.com/buy/xenon).
 
 ## Differences from pre-compiled builds
 
